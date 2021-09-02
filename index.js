@@ -73,37 +73,88 @@
                 {
                     type: 'input',
                     name: 'name_manager',
-                    message: 'Name of the manager:'
+                    message: 'Name of the manager:',
+                    validate: answer => {
+                        const pass = answer.match(
+                            /^[A-Za-z\s]+$/
+                        );
+                        if (pass) {
+                            return true;
+                        }
+                        return "Please enter a valid name from A to Z (Lowercase and/or capitals).";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'serial_manager',
-                    message: 'Employee ID:'
+                    message: 'Employee ID:',
+                    validate: answer => {
+                        const pass = answer.match(
+                            /^[0-9]\d*$/
+                        );
+                        if (pass) {
+                            return true;
+                        }
+                        return "Please enter a number value.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'email_manager',
-                    message: 'E-mail:'
+                    message: 'E-mail:',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter an email.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'office_manager',
-                    message: 'Office number:'
+                    message: 'Office number:',
+                    validate: answer => {
+                        const pass = answer.match(
+                            /^[0-9]\d*$/
+                        );
+                        if (pass) {
+                            return true;
+                        }
+                        return "Please enter a number value.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'github_manager',
-                    message: 'GitHub account: @'
+                    message: 'GitHub account: @',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter a GitHub user.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'linkedin_manager',
-                    message: 'LinkedIn account: @'
+                    message: 'LinkedIn account: @',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter a LinkedIn user.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'squad_manager',
-                    message: 'In charge of team:'
+                    message: 'In charge of team:',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter the name of the team.";
+                    }
                 }
             ]).then(answers => {
                 const manager = new Manager(
@@ -125,37 +176,88 @@
                 {
                     type: 'input',
                     name: 'name_engineer',
-                    message: 'Name of the engineer:'
+                    message: 'Name of the engineer:',
+                    validate: answer => {
+                        const pass = answer.match(
+                            /^[A-Za-z\s]+$/
+                        );
+                        if (pass) {
+                            return true;
+                        }
+                        return "Please enter a valid name from A to Z (Lowercase and/or capitals).";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'serial_engineer',
-                    message: 'Employee ID:'
+                    message: 'Employee ID:',
+                    validate: answer => {
+                        const pass = answer.match(
+                            /^[0-9]\d*$/
+                        );
+                        if (pass) {
+                            return true;
+                        }
+                        return "Please enter a number value.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'email_engineer',
-                    message: 'E-mail:'
+                    message: 'E-mail:',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter an email.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'office_engineer',
-                    message: 'Office number:'
+                    message: 'Office number:',
+                    validate: answer => {
+                        const pass = answer.match(
+                            /^[0-9]\d*$/
+                        );
+                        if (pass) {
+                            return true;
+                        }
+                        return "Please enter a number value.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'github_engineer',
-                    message: 'GitHub account: @'
+                    message: 'GitHub account: @',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter a GitHub user.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'linkedin_engineer',
-                    message: 'LinkedIn account: @'
+                    message: 'LinkedIn account: @',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter a LinkedIn user.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'project_engineer',
-                    message: 'Current backend project:'
+                    message: 'Current backend project:',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter the name of the backend project.";
+                    }
                 }
             ]).then(answers => {
                 const engineer = new Engineer(
@@ -177,37 +279,88 @@
                 {
                     type: 'input',
                     name: 'name_designer',
-                    message: 'Name of the designer:'
+                    message: 'Name of the designer:',
+                    validate: answer => {
+                        const pass = answer.match(
+                            /^[A-Za-z\s]+$/
+                        );
+                        if (pass) {
+                            return true;
+                        }
+                        return "Please enter a valid name from A to Z (Lowercase and/or capitals).";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'serial_designer',
-                    message: 'Employee ID:'
+                    message: 'Employee ID:',
+                    validate: answer => {
+                        const pass = answer.match(
+                            /^[0-9]\d*$/
+                        );
+                        if (pass) {
+                            return true;
+                        }
+                        return "Please enter a number value.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'email_designer',
-                    message: 'E-mail:'
+                    message: 'E-mail:',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter an email.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'office_designer',
-                    message: 'Office number:'
+                    message: 'Office number:',
+                    validate: answer => {
+                        const pass = answer.match(
+                            /^[0-9]\d*$/
+                        );
+                        if (pass) {
+                            return true;
+                        }
+                        return "Please enter a number value.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'github_designer',
-                    message: 'GitHub account: @'
+                    message: 'GitHub account: @',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter a GitHub user.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'linkedin_designer',
-                    message: 'LinkedIn account: @'
+                    message: 'LinkedIn account: @',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter a LinkedIn user.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'project_designer',
-                    message: 'Current software design:'
+                    message: 'Current software design:',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter the name of the software design project.";
+                    }
                 }
             ]).then(answers => {
                 const designer = new Designer(
@@ -229,37 +382,88 @@
                 {
                     type: 'input',
                     name: 'name_intern',
-                    message: 'Name of the intern:'
+                    message: 'Name of the intern:',
+                    validate: answer => {
+                        const pass = answer.match(
+                            /^[A-Za-z\s]+$/
+                        );
+                        if (pass) {
+                            return true;
+                        }
+                        return "Please enter a valid name from A to Z (Lowercase and/or capitals).";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'serial_intern',
-                    message: 'Employee ID:'
+                    message: 'Employee ID:',
+                    validate: answer => {
+                        const pass = answer.match(
+                            /^[0-9]\d*$/
+                        );
+                        if (pass) {
+                            return true;
+                        }
+                        return "Please enter a number value.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'email_intern',
-                    message: 'E-mail:'
+                    message: 'E-mail:',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter an email.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'office_intern',
-                    message: 'Office number:'
+                    message: 'Office number:',
+                    validate: answer => {
+                        const pass = answer.match(
+                            /^[0-9]\d*$/
+                        );
+                        if (pass) {
+                            return true;
+                        }
+                        return "Please enter a number value.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'github_intern',
-                    message: 'GitHub account: @'
+                    message: 'GitHub account: @',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter a GitHub user.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'linkedin_intern',
-                    message: 'LinkedIn account: @'
+                    message: 'LinkedIn account: @',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter a LinkedIn user.";
+                    }
                 },
                 {
                     type: 'input',
                     name: 'school_intern',
-                    message: 'Current school:'
+                    message: 'Current school:',
+                    validate: answer => {
+                        if (answer !== "") {
+                            return true;
+                        }
+                        return "Please enter the name of the school.";
+                    }
                 }
             ]).then(answers => {
                 const intern = new Intern(
