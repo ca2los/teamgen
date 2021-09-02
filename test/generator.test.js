@@ -8,22 +8,6 @@
         expect(typeof(profile)).toBe('object');
     });
 
-    /*test('Test NAME with the value...', () => {
-        const test_name = 'Motoko';
-        const profile = new Profile(test_name);
-        expect(profile.name).toBe(test_name);
-    });
-    test('Test SERIAL with the value...', () => {
-        const test_serial = 10101;
-        const profile = new Profile(test_serial);
-        expect(profile.serial).toBe(test_serial);
-    });
-    test('Test E-MAIL with the value...', () => {
-        const test_email = 'motoko@ghostintheshell.com';
-        const profile = new Profile(test_email);
-        expect(profile.email).toBe(test_email);
-    });*/
-
     test('Get NAME with the function get_name()', () => {
         const test_name = 'Motoko';
         const profile = new Profile(test_name);

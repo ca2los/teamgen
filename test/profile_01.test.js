@@ -27,7 +27,7 @@
         expect(manager.get_linkedin()).toBe(test_linkedin);
     });
 
-    test('Get GITHUB with the function get_team()', () => {
+    test('Get TEAM with the function get_team()', () => {
         const test_team = 'SAC Team';
         const manager = new Manager('Motoko',10101,'motoko@ghostintheshell.com',72,'major','motoko',test_team);
         expect(manager.get_team()).toBe(test_team);
