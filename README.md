@@ -64,8 +64,8 @@ KEY | VALUE
 `Current software design` | Option available only in the Designer's profile
 `Current school` | Option available only in the Intern's profile
 
-This is how you will see the program running from your CLI:
-   ![ANSWERS](./dev/img/answers.png)
+#### This is how you will see the program running from your CLI:
+![ANSWERS](./dev/img/answers.png)
 
 ### Libraries
 **[*INQUIRER LINK*](https://www.npmjs.com/package/inquirer)** Library for asking questions, answer validator, and 
@@ -89,8 +89,9 @@ Before pushing your changes, you must share a screenshot of the test generated b
 1. You must run at you terminal the command `npm install --save-dev jest`. 
 2. When the installation has finished, take a look at your `package.json` file and make sure the instruction `"test": "jest"` is inside `scripts`. If not, copy the code and paste it.
 3. Now run the command ´npm run test´ and if the program shows you no errors, take a screenshot and add it in your push to make sure the code is OK.
-4. Make sure you have something like the image below:
-   ![JEST](./dev/img/jest.png)
+
+#### Make sure you have something like the image below:
+![JEST](./dev/img/jest.png)
 
 ### Testing
 The code is still upgrading. New options will be available like choosing between web development, software development,
@@ -98,7 +99,3 @@ and design. In the meanwhile, I'll keep you updated.
 
 ### MIT License
 ###### Developed by [*ca2los*](https://github.com/ca2los)
-
-The main idea of this project is to create a webpage after loading the program to obtain a ready to use HTML file. If you want to define a new
-location for the HTML file before creating it, you must enter a new name for the folder, different from `/dev` which is the actual origin for the 
-file. You can change it in: 
