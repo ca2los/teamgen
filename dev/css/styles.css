@@ -1,5 +1,5 @@
 :root {
-  --bg_main: #f3f4ff;
+  --bg_main: #2d21e4;
   --radius: 10px;
   --green: #38FFAC;
   --white: #fff;
@@ -19,7 +19,6 @@ h6,
 strong,
 a {
   font-family: var(--roboto);
-  font-size: 100%;
 }
 p,
 ol,
@@ -88,9 +87,132 @@ body header ul li button {
 body header ul li img {
   width: 34px;
 }
+body main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 120px 0;
+}
+body main section ul {
+  background: #fff;
+  list-style: none;
+  margin: 0 auto;
+  padding: 30px 25px;
+}
+body main section ul .name {
+  font-family: var(--roboto);
+  font-size: 24px;
+}
+body main section ul .employee {
+  color: #2f2f2f;
+  font-family: var(--roboto);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+body main section ul:last-child {
+  background: #d6d3ff;
+}
+body main section ul:last-child .serial {
+  width: auto;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: inline-block;
+  font-family: var(--roboto);
+  font-size: 14px;
+  margin: 0 0 10px;
+  padding: 6px 16px;
+}
+body main section ul:last-child .email,
+body main section ul:last-child .github,
+body main section ul:last-child .linkedin {
+  background: #fff;
+  border-radius: 5px;
+  margin: 0 0 10px;
+  padding: 12px 14px;
+}
+body main section ul:last-child .email span,
+body main section ul:last-child .github span,
+body main section ul:last-child .linkedin span {
+  width: 100%;
+  display: block;
+  font-family: var(--roboto);
+  font-size: 11px;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+body main section ul:last-child .email a,
+body main section ul:last-child .github a,
+body main section ul:last-child .linkedin a {
+  color: #2d21e4;
+  font-family: var(--montserrat);
+  font-size: 16px;
+}
+body main section ul:last-child .office {
+  color: #0f05a9;
+  display: inherit;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+body main section ul:last-child .office span {
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+body main section ul:last-child .office a {
+  color: #000;
+  font-family: var(--montserrat);
+  font-size: 16px;
+}
+body main section ul:last-child .extra {
+  color: #2d21e4;
+  margin: 0;
+  font-family: var(--roboto);
+  text-align: center;
+}
+body main section ul:last-child .extra span {
+  width: 100%;
+  color: #616161;
+  font-family: var(--roboto);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+body main section.header-team {
+  width: 100%;
+  font-size: 34px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+body main section.header-team h1 {
+  color: #7066ff;
+  font-family: var(--montserrat);
+  margin: 0;
+  text-transform: uppercase;
+}
+body main section.box {
+  width: 30%;
+  max-width: 300px;
+  background: #d6d3ff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin: 0 1.5% 2%;
+  overflow: hidden;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+}
+body main section.box:hover {
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
 body footer {
   max-width: none;
-  background: #080311;
+  background: #161c21;
   padding: 60px 0;
 }
 body footer .container {
@@ -142,6 +264,28 @@ body footer .container .columns p {
   font-family: "Roboto Mono", serif;
   font-size: 0.8rem;
   margin: 10px 0 0;
+}
+@media screen and (max-width: 980px) {
+  body main section.header-team {
+    margin: 0 auto 20px;
+  }
+  body main section.box {
+    width: 300px;
+    margin: 0 2% 4%;
+  }
+  body main section.box:hover {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+@media screen and (max-width: 640px) {
+  body main {
+    padding: 100px 0;
+  }
+  body main section.header-team {
+    font-size: 22px;
+  }
 }
 @media screen and (max-width: 480px) {
   body footer .container {

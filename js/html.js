@@ -10,12 +10,12 @@
                         <li class="employee">${manager.get_role()}</li>
                     </ul>
                     <ul class="data">
-                        <li class="serial">ID: ${manager.get_serial()}</li>
-                        <li class="email">${manager.get_email()}</li>
-                        <li class="github"><a href="https://github.com/${manager.get_github()}" target="_blank">@${manager.get_github()}</a></li>
-                        <li class="linkedin"><a href="https://www.linkedin.com/in/${manager.get_linkedin()}" target="_blank">@${manager.get_linkedin()}</a></li>
-                        <li class="office">Office: ${manager.get_office()}</li>
-                        <li class="extra">Team ${manager.get_team()}</li>
+                        <li class="serial"><span>ID:</span> ${manager.get_serial()}</li>
+                        <li class="email"><span>Email</span> <a href='mailto:${manager.get_email()}'>${manager.get_email()}</a></li>
+                        <li class="github"><span>GitHub</span> <a href="https://github.com/${manager.get_github()}" target="_blank">@${manager.get_github()}</a></li>
+                        <li class="linkedin"><span>LinkedIn</span><a href="https://www.linkedin.com/in/${manager.get_linkedin()}" target="_blank">@${manager.get_linkedin()}</a></li>
+                        <li class="office"><span>Office</span> ${manager.get_office()}</li>
+                        <li class="extra"><span>Team</span> ${manager.get_team()}</li>
                     </ul>
                 </section>
             `;
@@ -29,12 +29,12 @@
                         <li class="employee">${engineer.get_role()}</li>
                     </ul>
                     <ul class="data">
-                        <li class="serial">ID: ${engineer.get_serial()}</li>
-                        <li class="email">${engineer.get_email()}</li>
-                        <li class="github"><a href="https://github.com/${engineer.get_github()}" target="_blank">@${engineer.get_github()}</a></li>
-                        <li class="linkedin"><a href="https://www.linkedin.com/in/${engineer.get_linkedin()}" target="_blank">@${engineer.get_linkedin()}</a></li>
-                        <li class="office">Office: ${engineer.get_office()}</li>
-                        <li class="extra">Developing ${engineer.get_project()}</li>
+                        <li class="serial"><span>ID:</span> ${engineer.get_serial()}</li>
+                        <li class="email"><span>Email</span> <a href='mailto:${engineer.get_email()}'>${engineer.get_email()}</a></li>
+                        <li class="github"><span>GitHub</span> <a href="https://github.com/${engineer.get_github()}" target="_blank">@${engineer.get_github()}</a></li>
+                        <li class="linkedin"><span>LinkedIn</span> <a href="https://www.linkedin.com/in/${engineer.get_linkedin()}" target="_blank">@${engineer.get_linkedin()}</a></li>
+                        <li class="office"><span>Office</span> ${engineer.get_office()}</li>
+                        <li class="extra"><span>Developing</span> ${engineer.get_project()}</li>
                     </ul>
                 </section>
             `;
@@ -48,12 +48,12 @@
                         <li class="employee">Software ${designer.get_role()}</li>
                     </ul>
                     <ul class="data">
-                        <li class="serial">ID: ${designer.get_serial()}</li>
-                        <li class="email">${designer.get_email()}</li>
-                        <li class="github"><a href="https://github.com/${designer.get_github()}" target="_blank">@${designer.get_github()}</a></li>
-                        <li class="linkedin"><a href="https://www.linkedin.com/in/${designer.get_linkedin()}" target="_blank">@${designer.get_linkedin()}</a></li>
-                        <li class="office">Office: ${designer.get_office()}</li>
-                        <li class="extra">BackEnd ${designer.get_design()}</li>
+                        <li class="serial"><span>ID:</span> ${designer.get_serial()}</li>
+                        <li class="email"><span>Email</span> <a href='mailto:${designer.get_email()}'>${designer.get_email()}</a></li>
+                        <li class="github"><span>GitHub</span> <a href="https://github.com/${designer.get_github()}" target="_blank">@${designer.get_github()}</a></li>
+                        <li class="linkedin"><span>LinkedIn</span> <a href="https://www.linkedin.com/in/${designer.get_linkedin()}" target="_blank">@${designer.get_linkedin()}</a></li>
+                        <li class="office"><span>Office</span> ${designer.get_office()}</li>
+                        <li class="extra"><span>BackEnd</span> ${designer.get_design()}</li>
                     </ul>
                 </section>
             `;
@@ -67,12 +67,12 @@
                         <li class="employee">${intern.get_role()}</li>
                     </ul>
                     <ul class="data">
-                        <li class="serial">ID: ${intern.get_serial()}</li>
-                        <li class="email">${intern.get_email()}</li>
-                        <li class="github"><a href="https://github.com/${intern.get_github()}" target="_blank">@${intern.get_github()}</a></li>
-                        <li class="linkedin"><a href="https://www.linkedin.com/in/${intern.get_linkedin()}" target="_blank">@${intern.get_linkedin()}</a></li>
-                        <li class="office">Office: ${intern.get_office()}</li>
-                        <li class="extra">School: ${intern.get_school()}</li>
+                        <li class="serial"><span>ID:</span> ${intern.get_serial()}</li>
+                        <li class="email"><span>Email</span> <a href='mailto:${intern.get_email()}'>${intern.get_email()}</a></li>
+                        <li class="github"><span>GitHub</span> <a href="https://github.com/${intern.get_github()}" target="_blank">@${intern.get_github()}</a></li>
+                        <li class="linkedin"><span>LinkedIn</span> <a href="https://www.linkedin.com/in/${intern.get_linkedin()}" target="_blank">@${intern.get_linkedin()}</a></li>
+                        <li class="office"><span>Office</span> ${intern.get_office()}</li>
+                        <li class="extra"><span>School</span> ${intern.get_school()}</li>
                     </ul>
                 </section>
             `;
