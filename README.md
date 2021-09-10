@@ -1,6 +1,6 @@
 # TEAM-GEN
 ###### Developed by [*ca2los*](https://github.com/ca2los)
-[*TRY IT HERE!*](https://ca2los.github.io/teamgen/)
+[*HOW IT LOOKS*](https://ca2los.github.io/teamgen/)
 VERSION 1.0
 
 ### *Team Generator*
